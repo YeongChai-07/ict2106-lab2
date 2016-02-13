@@ -124,15 +124,5 @@ namespace ExploreCalifornia.Controllers
             db.SaveChanges();*/
             return RedirectToAction("Index");
         }
-
-        /*protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                tourGateway.Dispose();
-                //db.Dispose();
-            }
-            base.Dispose(disposing);
-        }*/
     }
 }
