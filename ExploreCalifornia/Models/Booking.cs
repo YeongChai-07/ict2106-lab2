@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,7 @@ namespace ExploreCalifornia.Models
         public int BookingID { get; set; }
         public int TourID { get; set; }
         public string TourName { get; set; }
+
         public string ClientID { get; set; }
 
         [DataType(DataType.Date)]
