@@ -21,7 +21,7 @@
             @Html.DisplayNameFor(model => model.Length)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Price)
+            @Html.ActionLink(Html.DisplayNameFor(model => model.Price).ToHtmlString(), "Index", new { sortItem = "YES" }, null)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Rating)

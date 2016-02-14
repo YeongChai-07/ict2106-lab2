@@ -17,9 +17,13 @@ namespace ExploreCalifornia.Controllers
         private TourGateway tourGateway = new TourGateway();
 
         // GET: Tour
-        public ActionResult Index()
+        public ActionResult Index(string sortItem="NO")
         {
-            //return View(db.Tours.ToList());
+            if(sortItem.Equals("YES"))
+            {
+                //Populate and return the Ascending order of the Tour dataset
+                return View(tourGateway.SelectAll(true));
+            }
             return View(tourGateway.SelectAll());
             
         }
